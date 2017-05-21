@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符匹配（正则样式）</title>
+    <style>
+        #wrap{
+            width:500px;
+            margin:20px auto;
+        }
+        textarea {
+            width: 500px;
+            height: 200px;
+            margin: 10px 0;
+        }
+        input{
+            height:30px;
+            width:300px;
+        }
+        button{
+            height:30px;
+            width:180px;
+            margin-left:10px;
+        }
+        #client{
+            width:500px;
+            height:200px;
+            maigin-top:10px;
+            background: #f2f2f2;
+        }
+        #client div{
+            display:inline-block;
+            background:#ff9999;
+        }
+        span{
+            background:red;
+        }
+    </style>
+    <script data-main="/public/javascripts/main_31" src="/node_modules/requirejs/require.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <textarea  id="info" autofocus placeholder="输入字符"></textarea>
+        <input type="text" placeholder="查询字符"><button id="search">查询</button>
+        <div id="client" readonly></div>
+    </div>
+</body>
+</html>

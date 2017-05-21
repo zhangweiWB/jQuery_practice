@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格动态添加数据</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #aqi_add{
+            width:200px;
+            margin:10px auto;
+        }
+        label{
+            display:inline-block;
+            width:100px;
+        }
+
+        #aqi_table {
+            width:500px;
+            margin: 10px auto;
+            border-collapse: collapse;
+            border:solid 1px black;
+        }
+        #aqi_table  td,#aqi_table  th{
+            border:solid 1px black;
+            text-align: center;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="aqi_add">
+        <label for="aqi_city">城市名称</label>
+        <input id="aqi_city" type="text"><br>
+        <label for="aqi">空气质量指数</label>
+        <input id="aqi" type="text"><br>
+        <button id="btn">确认添加</button>
+    </div>
+    <div id="aqi_display">
+        <table id="aqi_table">
+            <tr>
+                <th>城市</th>
+                <th>空气质量</th>
+                <th>操作</th>
+            </tr>
+        </table>
+    </div>
+
+    <script  data-main="/public/javascripts/main_15" src="/node_modules/requirejs/require.js"></script>
+</body>
+</html>

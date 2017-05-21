@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul{
+            list-style: none;
+        }
+        img{
+            width:500px;
+            height:300px;
+        }
+        #box{
+            width:502px;
+            height:302px;
+            margin:100px auto;
+            border:solid 5px hotpink;
+            border-radius: 5px;
+            position:relative;
+        }
+        #box #list{
+            /*overflow:hidden;*/
+            position:relative;
+            width: 500px;
+            height:300px;
+            border:solid 1px #ccc;
+        }
+        #box #list li{
+            position:absolute;
+            top:0;
+            left:0;
+            width:500px;
+            height:300px;
+            opacity: 0;
+        }
+        #box #list li.current{
+            opacity: 1;
+        }
+        #box #count{
+            position:absolute;
+            right:0;
+            bottom:5px;
+        }
+        #box #count li{
+            width:10px;
+            height:10px;
+            background:lightgrey;
+            border-radius:10px;
+            margin-right:5px;
+            float:left;
+        }
+        #box #count li.current{
+            background:#ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="list">
+            <li class="current"><img src="/public/images/1.jpg"></li>
+            <li><img src="/public/images/2.jpg"></li>
+            <li><img src="/public/images/3.jpg"></li>
+            <li><img src="/public/images/4.jpg"></li>
+            <li><img src="/public/images/5.jpg"></li>
+        </ul>
+        <ul id="count">
+            <li title="第一页" class="current"></li>
+            <li title="第二页"></li>
+            <li title="第三页"></li>
+            <li title="第四页"></li>
+            <li title="第五页"></li>
+        </ul>
+    </div>
+    <script  data-main="/public/javascripts/main_23" src="/node_modules/requirejs/require.js"></script>
+
+</body>
+</html>

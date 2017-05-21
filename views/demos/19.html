@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #wrap{
+            margin:100px auto;
+            width:210px;
+            height:300px;
+        }
+        input{
+            width:100px;
+            height:40px;
+            font-size: 20px;
+            float:left;
+
+        }
+        #code{
+            width:100px;
+            height:40px;
+            font-size:20px;
+            float:right;
+            border:solid 2px;
+            margin-left:1px;
+            line-height:40px ;
+            text-align: center;
+        }
+        #btn{
+            width:210px;
+            height:30px;
+            margin-top:4px;
+            background: #4698ff;
+            border:solid 2px lightsteelblue;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <input type="text">
+        <div id="code"></div>
+        <button id="btn">验证</button>
+    </div>
+    <script  data-main="/public/javascripts/main_19" src="/node_modules/requirejs/require.js"></script>
+</body>
+</html>

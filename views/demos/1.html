@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>控制div属性</title>
+    <style type="text/css">
+        #container{
+            width:500px;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+        }
+        #object{
+            margin: 2px auto;
+
+        }
+        .origin{
+            width: 100px;
+            height: 100px;
+            background: #ff647e;
+        }
+        .biankuan{
+            width: 200px;
+        }
+        .bianse{
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <button id="btn1">变宽</button>
+    <button id="btn2">变色</button>
+    <button id="btn3">显示切换</button>
+    <button id="reset">重置</button>
+    <div id="object" class="origin"></div>
+</div>
+<script  data-main="/public/javascripts/main_1" src="/node_modules/requirejs/require.js"></script>
+
+</body>
+</html>

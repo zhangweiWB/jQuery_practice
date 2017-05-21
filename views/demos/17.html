@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投票</title>
+    <style>
+
+        fieldset{
+            width:500px;
+            height:100px;
+            border:solid 2px #ff647e;
+            border-radius:10px;
+            margin:10px auto;
+
+        }
+        div{
+            width:100px;
+            border:solid 1px lightgrey;
+            border-radius:5px;
+            float:left;
+
+            padding:10px;
+            margin-right:5px;
+            text-align: center;
+            position:relative;
+        }
+        #result span{
+            position:absolute;
+            top:0;
+            right:2px;
+            background: ghostwhite;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset id="vote">
+        <legend>投票</legend>
+        <div ><input type="checkbox" >C罗</div>
+        <div><input type="checkbox" >梅西</div>
+        <div><input type="checkbox">内马尔</div>
+    </fieldset>
+    <fieldset id="result">
+        <legend>已选</legend>
+    </fieldset>
+    <script  data-main="/public/javascripts/main_17" src="/node_modules/requirejs/require.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #clock{
+            width:300px;
+            height:300px;
+            border-radius:50%;
+            border:solid 1px black;
+            margin:150px auto;
+            background:ghostwhite;
+            position:relative;
+            box-shadow:0 0 100px 100px #ff4444;
+        }
+        .p{
+            position:absolute;
+            left:150px;
+            top:150px;
+            transform-origin: left center;
+        }
+        .hour{
+            width:60px;
+            height:12px;
+            background:#faa;
+            top:144px;
+        }
+        .minute{
+            width:100px;
+            height:8px;
+            background:#aaf;
+            top:146px;
+        }
+        .second{
+            width:120px;
+            height:4px;
+            background: #000;
+            top:148px;
+        }
+        span{
+            position: absolute;
+            font-size: 30px;
+            display: inline-block;
+            width: 215px;
+            height: 215px;
+            border-radius: 50%;
+            left:40px;
+            top: 40px;
+        }
+        span b{
+            transform: rotate(-45deg);
+            display:inline-block;
+            position: absolute;
+            text-shadow:1px 2px 8px #000;
+            transition:all .8s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <div class="p hour"></div>
+        <div class="p minute"></div>
+        <div class="p second"></div>
+        <span><b>12</b></span><span><b>1</b></span> <span><b>2</b></span> <span><b>3</b></span> <span><b>4</b></span> <span><b>5</b></span> <span><b>6</b></span> <span><b>7</b></span> <span><b>8</b></span> <span><b>9</b></span> <span><b>10</b></span> <span><b>11</b></span>
+    </div>
+    <script data-main="/public/javascripts/main_14" src="/node_modules/requirejs/require.js"></script>
+</body>
+</html>
